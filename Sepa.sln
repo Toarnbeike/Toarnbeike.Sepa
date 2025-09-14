@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F62CF784-2F68-49DD-949E-651F49BBE433}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{365CF559-E252-4B01-9A3A-13ED82ED4675}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{BF8FCCC7-7AC2-4ED9-8CAE-F473F823A718}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yaml = .github\workflows\build.yaml
+		.github\workflows\publish.yaml = .github\workflows\publish.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution files", "solution files", "{47431D10-C5C2-4244-AFE3-B99017813594}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sepa", "src\Sepa\Sepa.csproj", "{7546E671-205E-4343-AA7F-0648B1B01C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sepa.Tests", "tests\Sepa.Tests\Sepa.Tests.csproj", "{4E235DC1-F297-4552-A880-B460ED1B5F8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7546E671-205E-4343-AA7F-0648B1B01C80} = {F62CF784-2F68-49DD-949E-651F49BBE433}
+		{4E235DC1-F297-4552-A880-B460ED1B5F8B} = {365CF559-E252-4B01-9A3A-13ED82ED4675}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7546E671-205E-4343-AA7F-0648B1B01C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7546E671-205E-4343-AA7F-0648B1B01C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7546E671-205E-4343-AA7F-0648B1B01C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7546E671-205E-4343-AA7F-0648B1B01C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E235DC1-F297-4552-A880-B460ED1B5F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E235DC1-F297-4552-A880-B460ED1B5F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E235DC1-F297-4552-A880-B460ED1B5F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E235DC1-F297-4552-A880-B460ED1B5F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

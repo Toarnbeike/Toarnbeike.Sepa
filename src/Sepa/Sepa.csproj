@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    
+    <PropertyGroup>
+        <PackageId>Toarnbeike.Sepa</PackageId>
+        <!-- Version is managed centrally in Directory.build.props to keep versions in sync.-->
+        <Description>Modern Sepa Pain008 DirectDebit Xml writer for .net</Description>
+        <PackageTags>sepa pain 008 direct debit xml writer</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+</Project>
