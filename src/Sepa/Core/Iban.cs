@@ -35,7 +35,7 @@ public readonly partial record struct Iban
 
     private Iban(string value) => Value = value;
     
-    [GeneratedRegex("^[A-Z]{2}$")]
+    [GeneratedRegex("^[A-Z]{2}")]
     private static partial Regex IbanStartsWithLandCode();
     
     /// <summary>
